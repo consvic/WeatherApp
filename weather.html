@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <script src = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width">
+</head>
+<body onload="getWeatherJSON()">
+    
+    <div class="error">
+        <div id="clouds">
+            <div class="_cloud x1"></div>
+            <div class="_cloud x1_5"></div>
+            <div class="_cloud x2"></div>
+            <div class="_cloud x3"></div>
+            <div class="_cloud x4"></div>
+            <div class="_cloud x5"></div>
+        </div>
+        <div class='c'>
+            <div class='_error'>ERROR</div>
+            <hr>
+            <div class='_1'>NO INTERNET CONNECTION</div>
+            <a class='btn' href='weather.html'>REFRESH</a>
+        </div>
+    </div>
+    <div id="weather_wrapper">
+        <div class="weatherCard">
+            <div class="currentTemp">
+            <span class="temp" id="temp"></span>
+            <span class="location" id="city"></span>
+            </div>
+            <div class="currentWeather">
+                <div class="conditions" id="conditions">
+                    
+                </div>
+                <div class="info">
+                    <span class="desc" id="desc"></span>
+                    <span class="wind" id="windS"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
